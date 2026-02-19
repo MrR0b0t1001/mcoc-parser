@@ -49,7 +49,7 @@ func main() {
 		}
 
 		// channel the bot needs to look at
-		if m.ChannelID != targetChannelID {
+		if m.ChannelID != "1473312284934668338" {
 			return
 		}
 
