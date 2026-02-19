@@ -24,11 +24,6 @@ func main() {
 	if token == "" {
 		log.Fatal("DISCORD_TOKEN not provided")
 	}
-	// Retrieve the channel ID the bot needs to look for incoming commands
-	targetChannelID := os.Getenv("DISCORD_CHANNEL_ID")
-	if targetChannelID == "" {
-		log.Fatal("DISCORD_CHANNEL_ID not provided")
-	}
 
 	// Initiate discord bot session
 	sess, err := discordgo.New(
